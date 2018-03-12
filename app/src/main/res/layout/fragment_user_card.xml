@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tarikpc.tinder.UserCardFragment"
+    android:padding="75dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffeee9e2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/name"
+            android:id="@+id/profilePic"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ffeee9e2"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:id="@+id/name"/>
+
+        <View
+            android:id="@+id/item_swipe_left_indicator"
+            android:alpha="0"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:background="#A5F" />
+
+        <View
+            android:id="@+id/item_swipe_right_indicator"
+            android:alpha="0"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:layout_alignParentEnd="true"
+            android:background="#5AF" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
